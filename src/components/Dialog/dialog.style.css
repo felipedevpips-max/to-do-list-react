@@ -1,0 +1,20 @@
+::backdrop {
+  background-color: #000000;
+  opacity: 0.75;
+}
+.modal {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  width: 472px;
+  max-width: 90%;
+  border: none;
+}
+
+.input {
+  border-radius: 24px;
+  border: 1px solid, #ffffff;
+  background-color: transparent;
+  width: 360px;
+  max-width: 90%;
+  padding: 12px 42.5px;
+}
