@@ -34,13 +34,7 @@ export function Dialog({ isOpen, onClose, children }) {
               <IconClose />
             </button>
           </div>
-
-          {children}
-          <input
-            className="input"
-            type="text"
-            placeholder="Digite o item que deseja adicionar"
-          />
+          <div className="body">{children}</div>
         </dialog>
       </div>
     </>
