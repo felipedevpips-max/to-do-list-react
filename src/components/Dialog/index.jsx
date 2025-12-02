@@ -1,12 +1,21 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./dialog.style.css";
+import { IconClose } from "../icons";
 
-export function Dialog() {
+export function Dialog({ isOpen, onClose, children }) {
   //const dialog = document.querySelector("dialog");
   //nao fazer buscas no dom usando document query selector!!
   // "Show the dialog" button opens the dialog modally
 
   const dialogRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      openDialog();
+    } else {
+      closeDialog();
+    }
+  }, [isOpen]);
 
   const openDialog = () => {
     dialogRef.current.showModal();
@@ -20,16 +29,19 @@ export function Dialog() {
     <>
       <div className="modal">
         <dialog className="modal" ref={dialogRef}>
-          <button autoFocus onClick={closeDialog}>
-            Close
-          </button>
+          <div className="btn-close-wrapper">
+            <button autoFocus onClick={onClose} className="btn-close">
+              <IconClose />
+            </button>
+          </div>
+
+          {children}
           <input
             className="input"
             type="text"
             placeholder="Digite o item que deseja adicionar"
           />
         </dialog>
-        <button onClick={openDialog}>Show the dialog</button>
       </div>
     </>
   );
