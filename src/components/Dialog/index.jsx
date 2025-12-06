@@ -18,6 +18,7 @@ export function Dialog({ isOpen, onClose, children }) {
   }, [isOpen]);
 
   useEffect(() => {
+    //precisa retornar ou pode ocorrer problemas
     const dialog = dialogRef.current;
     dialog?.addEventListener("close", onClose);
     return () => {
