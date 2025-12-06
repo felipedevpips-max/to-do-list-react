@@ -10,7 +10,7 @@ import { IconPlus, IconSchool } from "./components/icons";
 import { TodoForm } from "./components/TodoForm";
 import { TodoGroup } from "./components/TodoGroup";
 import { EmptyState } from "./components/EmptyState";
-import Todocontext from "./components/TodoProvider/Todocontext";
+import Todocontext from "./components/TodoProvider/Todocontexto";
 
 function App() {
   const {

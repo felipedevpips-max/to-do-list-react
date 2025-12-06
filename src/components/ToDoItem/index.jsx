@@ -1,6 +1,6 @@
 import "./todo-item.style.css";
 import { IconPencil, IconTrash } from "../icons";
-import TodoContext from "../TodoProvider/Todocontext";
+import TodoContext from "../TodoProvider/Todocontexto";
 import { use } from "react";
 
 export function ToDoItem({ item }) {
