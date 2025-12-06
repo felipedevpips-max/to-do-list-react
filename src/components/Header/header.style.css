@@ -1,6 +1,10 @@
 .header {
-    padding: 24px;
-    background-color: #877EED;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  padding: 24px;
+  background-image: linear-gradient(
+    to top,
+    rgb(1, 44, 24),
+    rgba(0, 255, 76, 0.925)
+  );
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
