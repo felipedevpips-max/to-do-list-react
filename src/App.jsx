@@ -8,9 +8,9 @@ import { Header } from "./components/Header";
 import { Heading } from "./components/Heading";
 import { IconPlus, IconSchool } from "./components/icons";
 import { TodoForm } from "./components/TodoForm";
-import TodoContext from "./components/TodoProvider/Todocontext";
 import { TodoGroup } from "./components/TodoGroup";
 import { EmptyState } from "./components/EmptyState";
+import Todocontext from "./components/TodoProvider/Todocontext";
 
 function App() {
   const {
@@ -21,7 +21,7 @@ function App() {
     closeFormTodoDialog,
     selectedTodo,
     editTodo,
-  } = use(TodoContext);
+  } = use(Todocontext);
 
   const handleFormSubmit = (formData) => {
     if (selectedTodo) {
@@ -33,7 +33,6 @@ function App() {
     closeFormTodoDialog();
   };
 
-
   return (
     <main>
       <Container>
@@ -42,7 +41,6 @@ function App() {
             <IconSchool /> Plano de estudos
           </Heading>
         </Header>
-
 
         <ChecklistsWrapper>
           <TodoGroup
