@@ -29,7 +29,7 @@ export function ToDoItem({ item }) {
           <button className="btn" onClick={() => deleteTodo(item)}>
             <IconTrash />
           </button>
-          <button className="btn" onClick={() => openFormTodoDialog}>
+          <button className="btn" onClick={() => openFormTodoDialog(item)}>
             <IconPencil />
           </button>
         </div>
