@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { use, useState } from "react";
 import { ChecklistsWrapper } from "./components/ChecklistsWrapper";
 import { Container } from "./components/Container";
 import { Dialog } from "./components/Dialog";
@@ -11,10 +11,9 @@ import { TodoForm } from "./components/TodoForm";
 import TodoContext from "./components/TodoProvider/Todocontext";
 import { TodoGroup } from "./components/TodoGroup";
 
-
 function App() {
   const [showDialog, setShowDialog] = useState(false);
-  const { todos, addTodo } = useContext(TodoContext);
+  const { todos, addTodo } = use(TodoContext);
 
   const toggleDialog = () => {
     setShowDialog(!showDialog);
