@@ -7,11 +7,9 @@ export function TodoGroup({ itens, heading }) {
     <>
       <SubHeading>{heading}</SubHeading>
       <ToDoList>
-        {itens
-          .filter((t) => !t.completed)
-          .map(function (t) {
-            return <ToDoItem key={t.id} item={t} />;
-          })}
+        {itens.map(function (t) {
+          return <ToDoItem key={t.id} item={t} />;
+        })}
       </ToDoList>
     </>
   );
