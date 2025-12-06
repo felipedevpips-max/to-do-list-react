@@ -32,7 +32,7 @@ function App() {
 
     closeFormTodoDialog();
   };
-  
+
 
   return (
     <main>
@@ -42,6 +42,7 @@ function App() {
             <IconSchool /> Plano de estudos
           </Heading>
         </Header>
+
 
         <ChecklistsWrapper>
           <TodoGroup
