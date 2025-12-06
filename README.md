@@ -1,29 +1,25 @@
+🚀 Novo projeto no ar!
+Desenvolvi uma aplicação To-Do List em React com foco em componentização, boas práticas e construção de interfaces modernas.
 
-# App de Checklist de Estudos
+O objetivo foi criar algo simples, mas tecnicamente sólido, explorando conceitos fundamentais do ecossistema React e reforçando minha capacidade de estruturar aplicações escaláveis e bem organizadas.
 
-Um projeto prático desenvolvido passo a passo para quem já tem o básico de ReactJS e quer evoluir para construir aplicações mais organizadas, escaláveis e com experiência moderna. Ao longo do curso, criamos um app de checklist para organizar estudos, tarefas e o que mais precisar.
+🧠 Destaques do projeto:
 
-## 🔨 Funcionalidades do projeto
+Componentização reutilizável (inputs, botões, listas e modal)
 
-* Adição, edição e exclusão de tarefas
-* Organização das tarefas em "Para estudar" e "Concluído"
-* Marcação de tarefas como concluídas
-* Feedback visual para lista vazia (empty state)
-* Modal para adicionar/editar tarefas
-* Lista animada de tarefas
+Gerenciamento de estado com Hooks (useState / useEffect)
 
-![](screen-capture.png)
+Persistência dos dados via LocalStorage
 
-## ✔️ Técnicas e tecnologias utilizadas
+Estilização com CSS Modules
 
-O desenvolvimento do projeto aborda as seguintes técnicas e tecnologias:
+Renderização condicional e feedback visual para melhor UX
 
-* **useState e useEffect**: Gerenciamento de estado e persistência no localStorage
-* **useContext**: Contexto global para compartilhar estado das tarefas
-* **Componentização**: Componentes reutilizáveis como Button, FabButton, Dialog, TodoForm, TodoItem e TodoGroup
-* **Estilização com CSS Modules**: Organização dos estilos por componente
-* **Manipulação de formulários controlados**
-* **Persistência local com localStorage**: Salva as tarefas mesmo fechando o app
-* **Ícones SVG personalizados**
-* **Boas práticas de organização de código**
+Arquitetura limpa, organizada e fácil de manter
 
+
+🎯 Resultado
+
+Além de uma ferramenta funcional, esse projeto demonstra minha evolução em front-end, especialmente em React, organização de código e atenção à experiência do usuário.
+
+Se quiser trocar uma ideia sobre o projeto ou sugerir melhorias, estou super aberto a feedback! 🚀
