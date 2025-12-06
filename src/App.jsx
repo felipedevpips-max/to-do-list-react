@@ -10,7 +10,7 @@ import { IconPlus, IconSchool } from "./components/icons";
 import { TodoForm } from "./components/TodoForm";
 import { TodoGroup } from "./components/TodoGroup";
 import { EmptyState } from "./components/EmptyState";
-import Todocontext from "./components/TodoProvider/Todocontexto";
+import Todocontexto from "./components/TodoProvider/Todocontexto";
 
 function App() {
   const {
@@ -21,7 +21,7 @@ function App() {
     closeFormTodoDialog,
     selectedTodo,
     editTodo,
-  } = use(Todocontext);
+  } = use(Todocontexto);
 
   const handleFormSubmit = (formData) => {
     if (selectedTodo) {
